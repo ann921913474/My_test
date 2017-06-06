@@ -1,0 +1,8 @@
+--cpu Cortex-M0
+".\objects\main.o"
+".\objects\startup_lpc11xx.o"
+".\objects\system_lpc11xx.o"
+--strict --scatter ".\Objects\AD数模转换.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\AD数模转换.map" -o .\Objects\AD数模转换.axf
